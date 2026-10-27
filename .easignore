@@ -1,0 +1,16 @@
+.git/
+node_modules/
+.npm-cache/
+.expo/
+dist/
+dist-native/
+dist-ios-release/
+test-results/
+coverage/
+release/
+.env*
+*.log
+*.p8
+*.p12
+*.mobileprovision
+credentials.json

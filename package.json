@@ -1,0 +1,42 @@
+{
+  "name": "dailychecker",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "release:check": "node scripts/check-release.mjs",
+    "release:assets": "node scripts/check-release.mjs --assets-only",
+    "format": "prettier --write App.tsx index.ts src tests playwright.config.ts tsconfig.json app.json package.json README.md",
+    "test": "tsx --test tests/*.test.ts",
+    "test:ui": "playwright test",
+    "build:web": "expo export --platform web",
+    "build:bundles": "expo export --platform ios --platform android --output-dir dist-native"
+  },
+  "engines": {
+    "node": "^22.13.0 || ^24.3.0 || >=26.0.0"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~58.0.15",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "expo": "58.0.19",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-native": "^0.88.0",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-web": "^0.21.4"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,26 @@
+node_modules/
+.npm-cache/
+.expo/
+dist/
+dist-native/
+dist-ios-release/
+ios/
+android/
+*.p8
+*.p12
+*.mobileprovision
+credentials.json
+web-build/
+coverage/
+test-results/
+.env*
+!.env.example
+*.log
+
+# Local generated previews and signing material
+release/screenshots/web-previews/
+*.pem
+*.key
+*.keystore
+*.jks
+.DS_Store
